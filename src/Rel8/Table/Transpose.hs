@@ -3,6 +3,7 @@
 {-# language FunctionalDependencies #-}
 {-# language StandaloneKindSignatures #-}
 {-# language TypeFamilies #-}
+{-# language TypeOperators #-}
 {-# language UndecidableInstances #-}
 
 module Rel8.Table.Transpose
@@ -12,7 +13,7 @@ where
 
 -- base
 import Data.Kind ( Constraint, Type )
-import Prelude ()
+import Prelude ( type (~) )
 
 -- rel8
 import qualified Rel8.Schema.Kind as K
